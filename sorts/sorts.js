@@ -33,7 +33,36 @@ function selectionSort(alist) {
     return alist
 }
 
+function partition(alist, ini, fim) {
+    let p = fim
+    let aux = 0
+    let i = 0.
+        for (j = 0; j < fim; j++) {
+            if (alist[j] < alist[p]) {
+                aux = alist[j]
+                alist[j] = alist[i]
+                alist[i] = aux
+                i += 1
+            }
+        }
+        aux = alist[p]
+        alist[p] = alist[i]
+        alist[i] = aux
+        p = i
+    return p
+}
+
+function quickSort(alist, ini=0, fim=alist.length-1) {
+    if (ini < fim) {
+        let p = partition(alist, ini, fim)
+        quickSort(alist, ini, p-1)
+        quickSort(alist, p+1, fim)
+    }
+    return alist
+}
+
 const lista = [1, 4, 4, 10, 6, 3, 7, 2, 5, 12, 8, 9, 11, 13]
 
 //console.log(bubbleSort(lista))
-console.log(selectionSort(lista))
+//console.log(selectionSort(lista))
+console.log(quickSort(lista))
