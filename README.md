@@ -5,6 +5,7 @@ Aqui eu colocarei códigos de exercícios relacionados aos meus estudos na lingu
       - Bubble Sort  
       - Selection Sort  
       - Quick Sort  
+      - Insertion Sort  
 
   - ## Algoritmos de Busca - Searching Algorithms  
     - Algoritmos que buscam uma chave dentro de um array.  

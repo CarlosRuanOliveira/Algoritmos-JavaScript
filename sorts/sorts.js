@@ -61,8 +61,22 @@ function quickSort(alist, ini=0, fim=alist.length-1) {
     return alist
 }
 
+function insertionSort(alist) {
+    for (let i = 1; i < alist.length; i++) {
+        aux = alist[i]
+        j = i - 1
+        while (j >= 0 && alist[j] > aux){
+            alist[j+1] = alist[j]
+            j -= 1
+        }
+        alist[j+1] = aux
+    }
+    return alist
+}
+
 const lista = [1, 4, 4, 10, 6, 3, 7, 2, 5, 12, 8, 9, 11, 13]
 
 //console.log(bubbleSort(lista))
 //console.log(selectionSort(lista))
-console.log(quickSort(lista))
+//console.log(quickSort(lista))
+console.log(insertionSort(lista))
