@@ -1,4 +1,4 @@
-# Exercicios-JS  
+# Algoritmos-JavaScript  
 Aqui eu colocarei códigos de exercícios relacionados aos meus estudos na linguagem JS. Desafios, exercícios de lógica de programação, estruturas de dados e etc.  
   - ## Algoritmos de Ordenação - Sorting Algorithms  
     - Algoritmos usados para ordenar valores em um array.  
